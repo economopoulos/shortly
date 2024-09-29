@@ -2,7 +2,7 @@
   "name": "shortly",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/economopoulos/shortly.git",
+  "homepage": "https://github.com/economopoulos/shortly",
   "plugins": [
     "@babel/plugin-transform-numeric-separator"
   ],
