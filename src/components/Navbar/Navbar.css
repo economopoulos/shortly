@@ -1,0 +1,140 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--grayishViolet);
+  font-size: 1.1rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--veryDarkViolet);
+}
+
+.btn-type-a {
+  font-size: 0.9rem;
+  background-color: var(--cyan);
+  color: #fff;
+  padding: 0.65rem 1.4rem;
+  border-radius: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  outline: none;
+}
+
+.btn-type-a:hover,
+.btn-type-a:focus {
+  opacity: 0.6;
+  color: #fff;
+}
+
+nav {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.login-section {
+  display: flex;
+  align-self: flex-start;
+}
+
+.links-section {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 0.1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.1rem;
+}
+
+.links-section img {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+li a {
+  padding: 0 1rem;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 720px) {
+  li a {
+    margin: 0;
+    font-size: 2rem !important;
+    color: #fff;
+  }
+  li a:focus,
+  li a:active,
+  li a:visited,
+  reset:visited,
+  reset:active,
+  reset:focus {
+    color: #fff;
+    background-color: transparent !important;
+  }
+
+  .menu {
+    display: block !important;
+    font-size: 2rem;
+    padding-top: 0.3rem;
+    z-index: 100;
+  }
+
+  .login-section {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end !important;
+  }
+  .login-section {
+    display: none;
+  }
+  .reset {
+    background-color: transparent;
+  }
+
+  .resp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--veryDarkViolet);
+    z-index: 100;
+    gap: 1.5rem;
+    transition: transform 0.5s;
+    transform: translateY(-100vh);
+  }
+
+  .resp.visible {
+    transform: translateY(0);
+  }
+  .resp.hidden {
+    transform: translateY(-100vh);
+  }
+}

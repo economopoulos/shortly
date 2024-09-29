@@ -1,0 +1,118 @@
+.container-signin{
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  background-color: var(--gray2);
+  margin-top: 1rem;
+}
+
+.card-container{
+  width: 400px;
+  background-color: #EFF1F7;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px 4px rgba(53,50,62,0.14);
+}
+
+.card-container h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(53,50,62,.85);
+  margin-bottom: 1.25rem;
+}
+
+.signin-google{
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signin-google p {
+  text-align: center;
+  font-weight: 300;
+  opacity: 0.9;
+  color: white;
+}
+
+.btns{
+  margin-top: .85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns a{
+  border: 1.5px solid rgba(75,63,107,0.2);
+  width: 30%;
+  text-align: center;
+  padding: 0.25rem .5rem;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.card-container h4{
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#signin-form{
+  display: flex;
+  flex-direction: column;
+}
+
+#signin-form input{
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid rgba(75,63,107,0.2) !important;
+  width: 100%;
+}
+
+.redirect{
+  display: flex;
+  justify-content: space-between;
+}
+.redirect h3{
+  font-size: .8rem;
+  font-weight: 500;
+  color: rgba(53,50,62,.65);
+  cursor: pointer;
+}
+.redirect h3:hover,
+.redirect h3:focus,
+.underline:hover,
+.underline:focus{
+  opacity: 0.8;
+}
+
+.btn-login{
+  text-align: center;
+  background-color: #30C59B;
+  text-transform: uppercase;
+  color: #EFF1F7;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.btn-login:hover,
+.btn-login:focus{
+  opacity: 0.9;
+}
+
+.underline{
+  text-align: end;
+  text-decoration: underline;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #28AAA5 !important;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,215 @@
+.shortenerURL-container {
+  margin-top: 15rem;
+  background-color: var(--gray2);
+  padding: 2rem 0;
+}
+
+.offset-container {
+  margin-top: -6rem;
+}
+
+.visible {
+  display: none;
+}
+
+input[type="text"] {
+  padding: 1rem 1.6rem;
+  border-radius: 4px;
+  flex: 1;
+  border: none;
+  font-size: 1rem;
+}
+
+a {
+  cursor: pointer;
+}
+.outputURL-response > div {
+  position: relative;
+  display: block;
+}
+
+#copied-txt {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -60%;
+  right: -15%;
+  background-color: rgb(19, 19, 19);
+  color: #ffffffdd;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+}
+
+.tinyLink {
+  font-size: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder,
+input[type="text"] {
+  color: var(--grayishViolet);
+  font-family: "Poppins", sans-serif;
+}
+
+.inputURL button {
+  margin-left: 1.75rem;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputURL {
+  display: block;
+  padding: 2rem 4rem;
+  background: url("/src/images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--DarkViolet);
+  background-position-x: right;
+  border-radius: 6px;
+  position: relative;
+}
+
+.btn-small {
+  padding: 0.4rem 1.2rem;
+}
+
+.outputURL-response {
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 4px;
+  padding: 0.8rem 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.outputURL-response div {
+  display: flex;
+  align-items: center;
+}
+
+.outputURL-response div a {
+  margin-left: 1rem;
+}
+
+.outputURL-response div h3 {
+  color: var(--cyan);
+}
+
+.outputURL-response h3,
+.outputURL-response div h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.error-message {
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 0.7rem;
+  color: var(--red);
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  /* display: none; */
+}
+
+.error-input:focus {
+  outline: solid 2px var(--red);
+}
+
+hr {
+  border-top: 2px solid blue;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .outputURL-response h3,
+  .outputURL-response div h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputURL a {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .error-message {
+    font-size: 0.65em;
+    bottom: 95px;
+    left: 70px;
+  }
+  .outputURL-response div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .outputURL-response div a {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .outputURL-response {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  .outputURL-response h3,
+  .outputURL-response div h3 {
+    font-size: 0.9rem;
+  }
+  .outputURL-response div h3 {
+    margin-bottom: 0;
+  }
+
+  hr {
+    border-top: 1px solid var(--gray);
+    opacity: 0.5;
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .outputURL-response h3 {
+    margin-bottom: 0.8rem;
+  }
+  input::placeholder,
+  input[type="text"] {
+    font-size: 0.9rem;
+  }
+  .outputURL-response h3 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .outputURL-response .btn-small {
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+  .outputURL-response div h3 {
+    margin-top: 0;
+  }
+}
+
+/* devices less than 450px */
+@media only screen and (max-width: 450px) {
+  .img-section img {
+    display: none;
+  }
+}

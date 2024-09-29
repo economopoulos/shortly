@@ -1,0 +1,14 @@
+.btns a{
+  width: 45%;
+}
+
+.agreement{
+  text-align: center;
+}
+
+.agreement h3{
+  font-size: .8rem;
+  font-weight: 500;
+  color: rgba(53,50,62,.65);
+}
+

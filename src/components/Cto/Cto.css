@@ -1,0 +1,31 @@
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.cto-container {
+  background: url("/src/images/bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--DarkViolet);
+  width: 100%;
+}
+
+.cto-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.cto-section h2 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.cto-section .big:hover {
+  opacity: 0.9;
+}
