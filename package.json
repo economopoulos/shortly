@@ -2,7 +2,10 @@
   "name": "shortly",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://github.com/economopoulos/shortly.git",
+  "plugins": [
+    "@babel/plugin-transform-numeric-separator"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-numeric-separator": "^7.24.7"
   }
 }
