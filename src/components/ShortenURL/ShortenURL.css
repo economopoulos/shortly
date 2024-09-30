@@ -73,7 +73,6 @@ form {
   background-color: var(--DarkViolet);
   background-position-x: right;
   border-radius: 6px;
-  /* position: relative; */
 }
 
 .btn-small {
@@ -119,7 +118,6 @@ form {
   position: absolute;
   bottom: -20px;
   left: 10px;
-  /* display: none; */
 }
 form{
   position: relative;
@@ -135,7 +133,6 @@ form{
 }
 
 hr {
-  border-top: 2px solid blue;
   display: none;
   position: absolute;
   top: 30px;
@@ -203,7 +200,7 @@ hr {
 
   hr {
     border-top: 1px solid var(--gray);
-    opacity: 0.5;
+    opacity: 0.25;
     display: block;
     margin: 0.5rem 0;
   }

@@ -131,6 +131,7 @@ export default function ShortenURL() {
               <section key={index} className="outputURL ">
                 <div className="outputURL-response">
                   <h3>{input}</h3>
+                  <hr />
                   <div>
                     <h3 style={{ fontSize: "0.85rem" }}>
                       {links[index].substring(8)}
