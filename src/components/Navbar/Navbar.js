@@ -11,7 +11,7 @@ export default function Navbar() {
     setNavbarVisible(!navbarVisible)
   }
   const handleClick = () => {
-    navbarVisible(false)
+    setNavbarVisible(false)
   }
   return (
     <div className="main-content flex-remove nav-container">

@@ -2,7 +2,7 @@
   "name": "shortly",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/economopoulos/shortly",
+  "homepage": "/shortly/#",
   "plugins": [
     "@babel/plugin-transform-numeric-separator"
   ],
@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-transform-numeric-separator": "^7.24.7"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "gh-pages": "^6.1.1"
   }
 }
