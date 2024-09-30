@@ -16,27 +16,12 @@ function App() {
       <main>
         <ScrollToTop />
         <Routes>
-          <Route
-            path="https://economopoulos.github.io/shortly/"
-            element={<Home />}
-          ></Route>
-          <Route
-            path="https://economopoulos.github.io/shortly/pricing"
-            element={<Pricing />}
-          ></Route>
-          <Route
-            path="https://economopoulos.github.io/shortly/faqs"
-            element={<FAQs />}
-          ></Route>
-          <Route
-            path="https://economopoulos.github.io/shortly/signin"
-            element={<Signin />}
-          ></Route>
-          <Route
-            path="https://economopoulos.github.io/shortly/signup"
-            element={<Signup />}
-          ></Route>
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/shortly" element={<Home />}></Route>
+          <Route path="/pricing" element={<Pricing />}></Route>
+          <Route path="/faqs" element={<FAQs />}></Route>
+          <Route path="/signin" element={<Signin />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="*" element={<Navigate to="/shortly" />} />
         </Routes>
       </main>
       <Footer />
