@@ -138,7 +138,7 @@ export default function ShortenURL() {
                       text={links[index]}
                       onCopy={() => onCopyText(index)}
                     >
-                      <a to="/#" preventScrollReset={true} className="btn-small">
+                      <a to="/" preventScrollReset={true} className="btn-small">
                         copy
                       </a>
                     </CopyToClipboard>
