@@ -8,7 +8,7 @@ export default function Cto() {
       <div className="main-content">
         <section className="cto-section">
           <h2>Boost your links today</h2>
-          <Link to="/signin" className="btn-type-a big">
+          <Link to='/signin' className="btn-type-a big">
             get started
           </Link>
         </section>
