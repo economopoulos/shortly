@@ -2,6 +2,7 @@ import "./Pricing.css"
 import { FaCheckCircle } from "react-icons/fa"
 import { useState } from "react"
 import { useEffect } from "react"
+import { Link } from "react-router-dom"
 
 const Pricing = () => {
   const [isActive, setIsActive] = useState(false)
@@ -112,7 +113,9 @@ const Pricing = () => {
               </article>
             </section>
             <span className="hr op-1"></span>
-            <div className="btn-login w-80">get started</div>
+            <Link to="/signin" className="btn-login w-80">
+              get started
+            </Link>
           </div>
           <div className="pricing-card-container m-2">
             <div className="pricing-card-header">
@@ -141,7 +144,12 @@ const Pricing = () => {
               </article>
             </section>
             <span className="hr op-1"></span>
-            <div className="btn-login w-80">get started</div>
+            <Link
+              to="/signin"
+              className="btn-login w-80"
+            >
+              get started
+            </Link>
           </div>
         </div>
       </section>

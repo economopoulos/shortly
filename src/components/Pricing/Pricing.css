@@ -64,6 +64,26 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+.btn-login {
+  text-align: center;
+  background-color: #30c59b;
+  text-transform: uppercase;
+  color: #eff1f7;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  border-radius: 2px;
+  display: block;
+}
+
+.btn-login:hover,
+.btn-login:focus{
+  opacity: 0.85;
+  color: white;
+}
+
 .pricing-container {
   display: flex;
   justify-content: center;
