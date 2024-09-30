@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./ShortenURL.css"
 import { CopyToClipboard } from "react-copy-to-clipboard"
-import { Link } from "react-router-dom"
 
 export default function ShortenURL() {
   const [input, setInput] = useState("")
@@ -108,7 +107,6 @@ export default function ShortenURL() {
               <input
                 value={input}
                 onChange={handleInput}
-                className=""
                 type="text"
                 placeholder="Shorten a link here..."
               />
@@ -119,9 +117,12 @@ export default function ShortenURL() {
                 shorten it!
               </button>
               {visible && (
-                <Link className="btn-square" onClick={handleClear}>
+                <button
+                  className="btn-square"
+                  onClick={handleClear}
+                >
                   clear all
-                </Link>
+                </button>
               )}
             </form>
           </section>
@@ -138,9 +139,11 @@ export default function ShortenURL() {
                       text={links[index]}
                       onCopy={() => onCopyText(index)}
                     >
-                      <a to="/" preventScrollReset={true} className="btn-small">
+                      <button
+                        className="btn-small"
+                      >
                         copy
-                      </a>
+                      </button>
                     </CopyToClipboard>
                     {copiedIndex === index && <p id="copied-txt">copied</p>}
                   </div>

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "./Footer.css"
 import logo from "../../images/logo.svg"
 import iconMeta from "../../images/icon-facebook.svg"
@@ -16,39 +17,75 @@ export default function Footer() {
             <div className="links">
               <div className="link-content">
                 <h3>features</h3>
-                <a href="/#" className="link-title">
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   link shortening
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   branded links
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   analytics
-                </a>
+                </Link>
               </div>
               <div className="link-content">
                 <h3>resources</h3>
-                <a href="/#" className="link-title">
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   blog
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   developers
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   support
-                </a>
+                </Link>
               </div>
               <div className="link-content">
                 <h3>company</h3>
-                <a href="/#" className="link-title">
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   about
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   careers
-                </a>
-                <a href="/#" className="link-title">
+                </Link>
+                <Link
+                  to="/shortly"
+                  preventScrollReset={true}
+                  className="link-title"
+                >
                   contact
-                </a>
+                </Link>
               </div>
             </div>
             <div className="icons">

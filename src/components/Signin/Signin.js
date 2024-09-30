@@ -16,13 +16,15 @@ const Signin = () => {
             <span></span>
           </button>
           <div className="btns">
-            <a href="/#">
+            <Link to="/signin" preventScrollReset={true}>
               <BsMeta />
-            </a>
-            <a href="/#">
+            </Link>
+            <Link to="/signin" preventScrollReset={true}>
               <FaApple />
-            </a>
-            <a href="/#">SSO</a>
+            </Link>
+            <Link to="/signin" preventScrollReset={true}>
+              SSO
+            </Link>
           </div>
           <h4>or</h4>
           <form id="signin-form">

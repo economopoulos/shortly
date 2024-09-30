@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className="main-content flex-remove nav-container">
       <nav>
-        <Link to="/">
+        <Link to="/shortly">
           <img src={logo} alt="logo" />
         </Link>
         <ul
@@ -26,7 +26,7 @@ export default function Navbar() {
         >
           {navbarVisible && (
             <li>
-              <Link onClick={handleClick} to="/">
+              <Link onClick={handleClick} to="/shortly">
                 Home
               </Link>
             </li>

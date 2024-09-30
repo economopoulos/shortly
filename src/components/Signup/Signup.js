@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { FcGoogle } from "react-icons/fc"
 import { BsMeta } from "react-icons/bs"
 import { FaApple } from "react-icons/fa"
@@ -15,12 +16,12 @@ const Signup = () => {
             <span></span>
           </button>
           <div className="btns">
-            <a href="/#">
+            <Link to="/signup" preventScrollReset={true}>
               <BsMeta />
-            </a>
-            <a href="/#">
+            </Link>
+            <Link to="/signup" preventScrollReset={true}>
               <FaApple />
-            </a>
+            </Link>
           </div>
           <h4>or</h4>
           <form id="signin-form">
